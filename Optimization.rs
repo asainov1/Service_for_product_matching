@@ -16,6 +16,8 @@ fn jaccard_similarity(s1: &str, s2: &str) -> f64 {
 }
 
 fn main() {
+    println!("Rust!");
+
     let product1 = "Samsung Galaxy S21 Ultra 5G";
     let product2 = "Samsung Galaxy S21 5G Smartphone";
 
@@ -27,8 +29,4 @@ fn main() {
     } else {
         println!("Products are not similar.");
     }
-}
-
-fn main() {
-    println!("Rust!");
 }
