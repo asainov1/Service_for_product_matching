@@ -15,14 +15,6 @@ import polars as pl
 import time
 #%% Подключение учеток
 global myconn, conn
-myconn =  mysql.connector.connect(
-    host='starrocksdb',#'dwh-dbr5-lp2',
-    port='9030',
-    user='crrt',
-    password='4g1q6Dc=c7') 
-conn = cx_Oracle.connect(user='CRRT', password='NLP4321###', dsn='dwhnew-db:1521/node124')
-proxy_handler = request.ProxyHandler({})
-opener = request.build_opener(proxy_handler)
 
 
 
