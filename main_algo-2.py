@@ -25,17 +25,14 @@ if __name__ == '__main__':
     # Create logger
     receivers = ['Alikhan.Sainov@kaspi.kz']
 
-    handler = SMTPHandler(mailhost='relay2.bc.kz',
-                          fromaddr='reglament_info@kaspi.kz',
-                          toaddrs=receivers,
-                          subject='Service Matching')
+    handler = SMTPHandler(..)
 
     logger = logging.getLogger('logger-1')
     logger.setLevel(logging.INFO)
     logger.addHandler(handler)
 
     # Connect to Oracle DB
-    conn = cx_Oracle.connect(user='CRRT', password='NLP4321###', dsn='dwhnew-db:1521/node124')
+  
 
     # Load lazy frame
     df_tmp = issue_dataframe(conn)
