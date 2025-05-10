@@ -28,3 +28,7 @@ fn main() {
         println!("Products are not similar.");
     }
 }
+
+fn main() {
+    println!("Rust!");
+}
