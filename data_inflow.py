@@ -20,19 +20,7 @@ from logging.handlers import SMTPHandler
 import sys, traceback
 
 #%% Подключение учеток
-# myconn = mysql.connector.connect(
-#     host='dwh-dbr5-lp2',
-#     port='9030',
-#     user='bissultanov_57774',
-#     password='qv!@#RC'
-# )
-myconn = mysql.connector.connect(user='sainov_58623', password='VL$%_I4', 
-port = '9030',
-host='starrocksdb')
-conn = cx_Oracle.connect(user='CRRT', password='NLP4321###', dsn='dwhnew-db:1521/node124')
-# tqdm.tqdm.pandas()
-proxy_handler = request.ProxyHandler({})
-opener = request.build_opener(proxy_handler)
+
 #%% 
 
 logger = logging.getLogger('logger-1')
