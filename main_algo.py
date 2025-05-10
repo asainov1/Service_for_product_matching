@@ -20,10 +20,7 @@ if __name__ == '__main__':
         'Ilyas.Mohammad@kaspi.kz'
     ]
 
-    handler = SMTPHandler(mailhost='relay2.bc.kz',
-                          fromaddr='reglament_info@kaspi.kz',
-                          toaddrs=receivers,
-                          subject='Service Matching')
+    handler = SMTPHandler(..)
 
     logger = logging.getLogger('logger-1')
     logger.setLevel(logging.INFO)
