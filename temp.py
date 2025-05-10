@@ -20,17 +20,7 @@ import logging
 from logging.handlers import SMTPHandler
 import sys, traceback
 import base64
-myconn_crrt = mysql.connector.connect(
-    host='starrocksdb',#'dwh-dbr5-lp2',
-    port='9030',
-    user='crrt',
-    password='4g1q6Dc=c7') 
-myconn = mysql.connector.connect(
-    user='sainov_58623', 
-    password='VL$%_I4', 
-    port = '9030',
-    host='starrocksdb')
-conn = cx_Oracle.connect(user='CRRT', password='NLP4321###', dsn='dwhnew-db:1521/node124')
+
 # tqdm.tqdm.pandas()
 proxy_handler = request.ProxyHandler({})
 opener = request.build_opener(proxy_handler)
