@@ -29,19 +29,12 @@ from pytz import timezone  # Import timezone from pytz
 import pytz
 #%% Коннекшны
 def main ():
-    myconn = mysql.connector.connect(user='sainov_58623', password='VL$%_I4', 
-    port = '9030',
-    host='starrocksdb')
 
-    conn = cx_Oracle.connect(user='CRRT', password='NLP4321###', dsn='dwhnew-db:1521/node124')
+
+  
 
     proxy_handler = request.ProxyHandler({})
 
-    myconn_crrt = mysql.connector.connect(
-        host='starrocksdb',#'dwh-dbr5-lp2',
-        port='9030',
-        user='crrt',
-        password='4g1q6Dc=c7') 
 
     # Устанавливаю время
     
