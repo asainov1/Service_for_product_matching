@@ -38,10 +38,7 @@ receivers = [
     'Alikhan.Sainov@kaspi.kz'
 ]
 
-handler = SMTPHandler(mailhost='relay2.bc.kz',
-                        fromaddr='reglament_info@kaspi.kz',
-                        toaddrs=receivers,
-                        subject='Service Matching')
+handler = SMTPHandler(..)
 
 logger = logging.getLogger('logger-1')
 logger.setLevel(logging.INFO)
@@ -49,11 +46,6 @@ logger.addHandler(handler)
 try: 
     #%%
     # 1. ВЫЗОВ ФУНКЦИИ DATA INFLOW 
-    engine = create_engine("oracle+cx_oracle://CRRT:NLP4321###@dwhnew-db:1521/?service_name=node124")
-    myconn = mysql.connector.connect(user='sainov_58623', password='VL$%_I4', 
-    port = '9030',
-    host='starrocksdb')
-    conn = cx_Oracle.connect(user='CRRT', password='NLP4321###', dsn='dwhnew-db:1521/node124')
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--sos')
