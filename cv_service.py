@@ -18,25 +18,8 @@ from tqdm import tqdm
 import time
 import boto3
 #%%
-
-# Секретная инфа
-key_id = 'E55Z2ELPFQBA9PWY3HF3'
-secret_key = '0isXCmi3QEMk4TDCIeww61HSLRJevBB7BZ6ZpCJI'
-endpoint = 'http://ses.hq.bc'
-
 # Соединения с базами
-engine = create_engine("oracle+cx_oracle://CRRT:NLP4321###@dwhnew-db:1521/?service_name=node124")
-myconn = mysql.connector.connect(user='sainov_58623', 
-                                 password='VL$%_I4', 
-                                 port = '9030',
-                                 host='starrocksdb')
-myconn_crrt = mysql.connector.connect(host='starrocksdb',
-                                      port='9030',
-                                      user='crrt',
-                                      password='4g1q6Dc=c7') 
-conn = cx_Oracle.connect(user='CRRT', 
-                         password='NLP4321###', 
-                         dsn='dwhnew-db:1521/node124')
+----
 #%%
 # Все остальное
 query_main_df = f"""
